@@ -1,0 +1,63 @@
+{
+  "buildPath": "comp",
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "ui/index.html"
+        ],
+        "createdAt": "2026-10-29T02:58:28.586Z",
+        "reason": "user asked for lettering engraved into the concrete; background-clip:text carries the concrete texture under a flat dark tint, no colour gradient"
+      },
+      {
+        "rule": "wide-tracking",
+        "value": "*",
+        "files": [
+          "ui/index.html"
+        ],
+        "createdAt": "2026-10-29T02:58:28.603Z",
+        "reason": "model judgement: every tracked string is a short uppercase stencil label (section titles, knob labels, tags); body notes reduced to 0.02em"
+      },
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "ui/style.css"
+        ],
+        "createdAt": "2026-10-29T02:58:28.619Z",
+        "reason": "user asked for lettering engraved into the concrete; background-clip:text carries the concrete texture under a flat dark tint, no colour gradient"
+      },
+      {
+        "rule": "wide-tracking",
+        "value": "*",
+        "files": [
+          "ui/style.css"
+        ],
+        "createdAt": "2026-10-29T02:58:28.635Z",
+        "reason": "model judgement: every tracked string is a short uppercase stencil label (section titles, knob labels, tags); body notes reduced to 0.02em"
+      },
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "ui/style.css"
+        ],
+        "createdAt": "2026-10-29T02:58:28.651Z",
+        "reason": "model judgement: knurled ridges on the fader caps, a material detail of the control"
+      },
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "docs/index.html"
+        ],
+        "createdAt": "2026-10-29T04:33:34.853Z",
+        "reason": "same engraved lettering the user asked for in the plugin: flat bone tint clipped through concrete, no colour gradient"
+      }
+    ]
+  }
+}

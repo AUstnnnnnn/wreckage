@@ -1,0 +1,79 @@
+name: build
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: WebView2 SDK
+        shell: pwsh
+        run: nuget install Microsoft.Web.WebView2 -OutputDirectory "${{ github.workspace }}\webview2"
+      - name: Configure
+        run: cmake -B build -G "Visual Studio 17 2022" -A x64 -DJUCE_WEBVIEW2_PACKAGE_LOCATION="${{ github.workspace }}/webview2"
+      - name: Build
+        run: cmake --build build --config Release --target Wreckage_VST3 Wreckage_Standalone WreckageRender
+      - name: Render check
+        run: build\WreckageRender_artefacts\Release\WreckageRender.exe build\renders
+      - name: Package
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force dist | Out-Null
+          Copy-Item -Recurse build\Wreckage_artefacts\Release\VST3\WRECKAGE.vst3 dist\
+          Copy-Item build\Wreckage_artefacts\Release\Standalone\WRECKAGE.exe dist\
+          Copy-Item INSTALL.txt dist\
+      - name: Installer
+        shell: pwsh
+        run: |
+          choco install innosetup -y --no-progress
+          & "${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe" /DSrc="${{ github.workspace }}\build\Wreckage_artefacts\Release" installer\wreckage.iss
+      - uses: actions/upload-artifact@v4
+        with:
+          name: WRECKAGE-Setup
+          path: dist/WRECKAGE-Setup.exe
+      - uses: actions/upload-artifact@v4
+        with:
+          name: WRECKAGE-windows
+          path: dist
+
+  macos:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure
+        run: cmake -B build -G Xcode
+      - name: Build
+        run: cmake --build build --config Release --target Wreckage_VST3 Wreckage_AU Wreckage_Standalone
+      - name: Package
+        run: |
+          mkdir -p dist
+          cp -R build/Wreckage_artefacts/Release/VST3/WRECKAGE.vst3 build/Wreckage_artefacts/Release/AU/WRECKAGE.component build/Wreckage_artefacts/Release/Standalone/WRECKAGE.app dist/
+          cp INSTALL.txt dist/
+          ditto -c -k dist WRECKAGE-mac.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: WRECKAGE-macos
+          path: WRECKAGE-mac.zip
+
+  # Every push to main refreshes one "latest" release, so the install page's download links never move.
+  release:
+    if: github.ref == 'refs/heads/main'
+    needs: [windows, macos]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete latest --repo "$GITHUB_REPOSITORY" --yes --cleanup-tag || true
+          gh release create latest --repo "$GITHUB_REPOSITORY" --title "WRECKAGE" --target "$GITHUB_SHA" \
+            --notes "For WRECKEM. Windows: run WRECKAGE-Setup.exe. Mac: WRECKAGE-mac.zip. Install guide: https://austnnnnnn.github.io/wreckage/" \
+            artifacts/WRECKAGE-Setup/WRECKAGE-Setup.exe artifacts/WRECKAGE-macos/WRECKAGE-mac.zip

@@ -1,0 +1,764 @@
+[
+ {
+  "name": "CONDEMNED",
+  "author": "WRECKAGE",
+  "tags": [
+   "lead",
+   "chip"
+  ],
+  "notes": "Bit-crushed chip lead. Mod wheel adds rust.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "oscA_wave": 4,
+   "oscA_pw": 0.3,
+   "oscB_wave": 1,
+   "oscB_pw": 0.25,
+   "oscB_level": 0.5,
+   "oscB_fine": 12,
+   "flt_cutoff": 6000,
+   "flt_res": 0.35,
+   "wrk_mode": 3,
+   "wrk_drive": 0.4,
+   "crush_bits": 8,
+   "crush_rate": 2,
+   "aenv_a": 0.002,
+   "aenv_d": 0.2,
+   "aenv_s": 0.7,
+   "aenv_r": 0.2,
+   "glide": 0.04,
+   "mono": 1,
+   "space_mix": 0.2,
+   "lfo_rate": 5.5,
+   "lfo_pitch": 0.03
+  }
+ },
+ {
+  "name": "BLEACHED TONGUE",
+  "author": "WRECKAGE",
+  "tags": [
+   "lead",
+   "chip",
+   "dirty"
+  ],
+  "notes": "Thin pulse through fuzz and 6-bit crush.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "oscA_wave": 1,
+   "oscA_pw": 0.12,
+   "crush_bits": 6,
+   "wrk_mode": 2,
+   "wrk_drive": 0.5,
+   "wrk_tone": 0.7,
+   "flt_cutoff": 9000,
+   "mono": 1,
+   "glide": 0.06,
+   "space_mix": 0.18
+  }
+ },
+ {
+  "name": "NO TRESPASS",
+  "author": "WRECKAGE",
+  "tags": [
+   "lead",
+   "dirty"
+  ],
+  "notes": "Screaming unison saw. Push RUST for the scream.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "uni_voices": 5,
+   "uni_detune": 0.35,
+   "oscB_wave": 0,
+   "oscB_level": 0.6,
+   "oscB_fine": -8,
+   "flt_cutoff": 3500,
+   "flt_res": 0.5,
+   "flt_env": 0.5,
+   "wrk_mode": 2,
+   "wrk_drive": 0.7,
+   "wrk_tone": 0.55,
+   "lfo_rate": 6,
+   "lfo_pitch": 0.04,
+   "space_mix": 0.2
+  }
+ },
+ {
+  "name": "DEAD PIXEL",
+  "author": "WRECKAGE",
+  "tags": [
+   "pluck",
+   "chip"
+  ],
+  "notes": "Chip pluck for arps.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "oscA_wave": 4,
+   "oscA_pw": 0.5,
+   "aenv_d": 0.15,
+   "aenv_s": 0,
+   "aenv_r": 0.1,
+   "fenv_d": 0.12,
+   "fenv_s": 0,
+   "flt_env": 0.6,
+   "flt_cutoff": 1500,
+   "crush_bits": 7,
+   "space_mix": 0.25
+  }
+ },
+ {
+  "name": "KILL SWITCH",
+  "author": "WRECKAGE",
+  "tags": [
+   "lead",
+   "chip"
+  ],
+  "notes": "Square lead gated by a synced 1/16 LFO.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "oscA_wave": 1,
+   "oscA_pw": 0.5,
+   "oscB_wave": 4,
+   "oscB_level": 0.35,
+   "oscB_oct": 1,
+   "lfo_wave": 3,
+   "lfo_sync": 1,
+   "lfo_div": 4,
+   "lfo_amp": 1,
+   "mono": 1,
+   "flt_cutoff": 5000,
+   "wrk_mode": 3,
+   "wrk_drive": 0.3,
+   "space_mix": 0.22
+  }
+ },
+ {
+  "name": "WRECKEM",
+  "author": "WRECKAGE",
+  "tags": [
+   "lead",
+   "signature",
+   "dirty"
+  ],
+  "notes": "His. Wide saw with a pulse an octave down, fuzz and a bit of rust.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "uni_voices": 5,
+   "uni_detune": 0.3,
+   "oscB_wave": 1,
+   "oscB_oct": -1,
+   "oscB_level": 0.5,
+   "flt_cutoff": 2200,
+   "flt_res": 0.35,
+   "flt_env": 0.35,
+   "wrk_mode": 2,
+   "wrk_drive": 0.45,
+   "rust": 0.35,
+   "space_mix": 0.25
+  }
+ },
+ {
+  "name": "SIREN",
+  "author": "WRECKAGE",
+  "tags": [
+   "fx",
+   "lead"
+  ],
+  "notes": "Slow pitch sweep through fuzz.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "lfo_wave": 1,
+   "lfo_rate": 0.4,
+   "lfo_pitch": 0.6,
+   "wrk_mode": 2,
+   "wrk_drive": 0.5,
+   "mono": 1,
+   "space_mix": 0.3,
+   "flt_cutoff": 5000
+  }
+ },
+ {
+  "name": "WITCH HOUSE",
+  "author": "WRECKAGE",
+  "tags": [
+   "pad",
+   "dark"
+  ],
+  "notes": "Huge slow saw pad, tape-warped. Play it low.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "oscA_oct": -1,
+   "uni_voices": 7,
+   "uni_detune": 0.5,
+   "uni_spread": 1,
+   "flt_cutoff": 1200,
+   "flt_res": 0.25,
+   "aenv_a": 1.2,
+   "aenv_d": 2,
+   "aenv_s": 0.8,
+   "aenv_r": 3,
+   "tape_wow": 0.45,
+   "wrk_mode": 1,
+   "wrk_drive": 0.3,
+   "wrk_tone": 0.35,
+   "space_mix": 0.45,
+   "space_size": 0.9,
+   "lfo_rate": 0.15,
+   "lfo_cutoff": 0.2
+  }
+ },
+ {
+  "name": "BLEACH CHOIR",
+  "author": "WRECKAGE",
+  "tags": [
+   "pad"
+  ],
+  "notes": "Hollow choir pad, bit-faded.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "oscA_wave": 2,
+   "oscB_wave": 0,
+   "oscB_oct": 1,
+   "oscB_level": 0.3,
+   "uni_voices": 5,
+   "uni_detune": 0.4,
+   "flt_cutoff": 2500,
+   "flt_res": 0.4,
+   "aenv_a": 2,
+   "aenv_s": 1,
+   "aenv_r": 4,
+   "space_mix": 0.55,
+   "tape_wow": 0.6,
+   "crush_bits": 12
+  }
+ },
+ {
+  "name": "DROWNED",
+  "author": "WRECKAGE",
+  "tags": [
+   "pad",
+   "dark",
+   "drone"
+  ],
+  "notes": "Pitched-down, underwater, smeared.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "oscA_oct": -2,
+   "uni_voices": 7,
+   "uni_detune": 0.7,
+   "flt_cutoff": 700,
+   "tape_wow": 0.8,
+   "space_mix": 0.6,
+   "space_damp": 0.8,
+   "wrk_mode": 1,
+   "wrk_drive": 0.4,
+   "crush_rate": 3,
+   "aenv_a": 1.5,
+   "aenv_r": 4
+  }
+ },
+ {
+  "name": "SODIUM LAMP",
+  "author": "WRECKAGE",
+  "tags": [
+   "pad"
+  ],
+  "notes": "Warm PWM pad that breathes.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "oscA_wave": 1,
+   "oscA_pw": 0.4,
+   "lfo_pw": 0.5,
+   "lfo_rate": 0.3,
+   "oscB_wave": 0,
+   "oscB_fine": -9,
+   "oscB_level": 0.6,
+   "flt_cutoff": 1800,
+   "aenv_a": 0.8,
+   "aenv_r": 2.5,
+   "space_mix": 0.4
+  }
+ },
+ {
+  "name": "FLOOD LEVEL",
+  "author": "WRECKAGE",
+  "tags": [
+   "drone",
+   "dark"
+  ],
+  "notes": "Resonant dark drone with a slow filter tide.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "oscA_oct": -1,
+   "sub_level": 0.5,
+   "noise_level": 0.08,
+   "flt_cutoff": 500,
+   "flt_res": 0.6,
+   "lfo_rate": 0.08,
+   "lfo_cutoff": 0.35,
+   "space_mix": 0.7,
+   "space_size": 1,
+   "tape_wow": 0.3,
+   "aenv_a": 2,
+   "aenv_r": 5,
+   "out_gain": -8
+  }
+ },
+ {
+  "name": "DRAPE",
+  "author": "WRECKAGE",
+  "tags": [
+   "pad",
+   "dark"
+  ],
+  "notes": "Restrained. Sine and sub, barely any dirt.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "oscA_wave": 3,
+   "sub_level": 0.4,
+   "wrk_mode": 1,
+   "wrk_drive": 0.2,
+   "aenv_a": 0.6,
+   "aenv_r": 2,
+   "space_mix": 0.35,
+   "flt_cutoff": 3000
+  }
+ },
+ {
+  "name": "VEIL",
+  "author": "WRECKAGE",
+  "tags": [
+   "pad"
+  ],
+  "notes": "Folded sine pad, glassy.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "oscA_wave": 3,
+   "oscB_wave": 2,
+   "oscB_oct": 1,
+   "oscB_level": 0.4,
+   "wrk_mode": 0,
+   "wrk_drive": 0.35,
+   "aenv_a": 1,
+   "aenv_r": 2.5,
+   "space_mix": 0.5,
+   "uni_voices": 3,
+   "uni_detune": 0.2
+  }
+ },
+ {
+  "name": "CROWBAR SUB",
+  "author": "WRECKAGE",
+  "tags": [
+   "bass",
+   "sub"
+  ],
+  "notes": "Saturated sub. Mono with a little glide.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "oscA_wave": 3,
+   "oscA_level": 0.6,
+   "sub_level": 0.9,
+   "wrk_mode": 1,
+   "wrk_drive": 0.55,
+   "wrk_tone": 0.4,
+   "flt_cutoff": 300,
+   "flt_env": 0,
+   "aenv_a": 0.003,
+   "aenv_d": 0.5,
+   "aenv_s": 0.9,
+   "aenv_r": 0.15,
+   "mono": 1,
+   "glide": 0.05,
+   "space_mix": 0
+  }
+ },
+ {
+  "name": "RUST BELT",
+  "author": "WRECKAGE",
+  "tags": [
+   "bass",
+   "dirty"
+  ],
+  "notes": "Grimy reese with a synced filter wobble.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "uni_voices": 3,
+   "uni_detune": 0.25,
+   "oscB_wave": 0,
+   "oscB_fine": -12,
+   "oscB_level": 0.7,
+   "flt_cutoff": 900,
+   "flt_res": 0.3,
+   "flt_drive": 0.4,
+   "wrk_mode": 2,
+   "wrk_drive": 0.45,
+   "wrk_tone": 0.45,
+   "wrk_mix": 0.7,
+   "lfo_sync": 1,
+   "lfo_div": 2,
+   "lfo_cutoff": 0.15,
+   "mono": 1,
+   "space_mix": 0
+  }
+ },
+ {
+  "name": "ASBESTOS",
+  "author": "WRECKAGE",
+  "tags": [
+   "bass"
+  ],
+  "notes": "Wavefolded triangle bass.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "oscA_wave": 2,
+   "wrk_mode": 0,
+   "wrk_drive": 0.6,
+   "flt_env": 0.4,
+   "fenv_d": 0.25,
+   "fenv_s": 0,
+   "flt_cutoff": 1500,
+   "mono": 1,
+   "glide": 0.03,
+   "space_mix": 0
+  }
+ },
+ {
+  "name": "808 FUNERAL",
+  "author": "WRECKAGE",
+  "tags": [
+   "bass",
+   "sub"
+  ],
+  "notes": "Long distorted 808 tail.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "oscA_wave": 3,
+   "sub_level": 0.5,
+   "aenv_d": 1.4,
+   "aenv_s": 0,
+   "aenv_r": 0.6,
+   "wrk_mode": 1,
+   "wrk_drive": 0.7,
+   "wrk_tone": 0.5,
+   "mono": 1,
+   "glide": 0.08,
+   "flt_cutoff": 2000,
+   "space_mix": 0
+  }
+ },
+ {
+  "name": "CHAIN LINK",
+  "author": "WRECKAGE",
+  "tags": [
+   "bass",
+   "pluck"
+  ],
+  "notes": "Resonant pulse pluck bass.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "oscA_wave": 1,
+   "oscA_pw": 0.3,
+   "flt_env": 0.7,
+   "fenv_d": 0.18,
+   "fenv_s": 0,
+   "flt_cutoff": 250,
+   "flt_res": 0.55,
+   "crush_bits": 10,
+   "mono": 1,
+   "space_mix": 0
+  }
+ },
+ {
+  "name": "BLACK DENIM",
+  "author": "WRECKAGE",
+  "tags": [
+   "bass"
+  ],
+  "notes": "Dark square bass, 24dB filter.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "oscA_wave": 1,
+   "uni_voices": 3,
+   "uni_detune": 0.15,
+   "flt_mode": 1,
+   "flt_cutoff": 600,
+   "wrk_mode": 2,
+   "wrk_drive": 0.3,
+   "mono": 1,
+   "space_mix": 0
+  }
+ },
+ {
+  "name": "TETANUS",
+  "author": "WRECKAGE",
+  "tags": [
+   "pluck",
+   "keys"
+  ],
+  "notes": "Dull metal pluck.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "oscB_wave": 1,
+   "oscB_level": 0.5,
+   "aenv_d": 0.35,
+   "aenv_s": 0,
+   "aenv_r": 0.3,
+   "flt_env": 0.6,
+   "fenv_d": 0.2,
+   "fenv_s": 0,
+   "flt_cutoff": 800,
+   "flt_res": 0.4,
+   "space_mix": 0.35,
+   "tape_wow": 0.2
+  }
+ },
+ {
+  "name": "CONCRETE BELL",
+  "author": "WRECKAGE",
+  "tags": [
+   "keys",
+   "pluck"
+  ],
+  "notes": "Folded bell, cold.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "oscA_wave": 3,
+   "oscB_wave": 2,
+   "oscB_oct": 2,
+   "oscB_semi": 7,
+   "oscB_level": 0.4,
+   "wrk_mode": 0,
+   "wrk_drive": 0.45,
+   "aenv_d": 1.5,
+   "aenv_s": 0,
+   "aenv_r": 1.2,
+   "space_mix": 0.5
+  }
+ },
+ {
+  "name": "GHOST KEYS",
+  "author": "WRECKAGE",
+  "tags": [
+   "keys"
+  ],
+  "notes": "Warped, half-erased keys.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "oscA_wave": 2,
+   "tape_wow": 0.5,
+   "crush_bits": 10,
+   "crush_rate": 2,
+   "space_mix": 0.4,
+   "aenv_a": 0.01,
+   "aenv_d": 0.8,
+   "aenv_s": 0.4,
+   "aenv_r": 0.8
+  }
+ },
+ {
+  "name": "BROKEN MUSIC BOX",
+  "author": "WRECKAGE",
+  "tags": [
+   "keys",
+   "chip"
+  ],
+  "notes": "Wobbly chip music box.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "oscA_wave": 4,
+   "oscA_pw": 0.8,
+   "oscA_oct": 1,
+   "aenv_d": 0.6,
+   "aenv_s": 0,
+   "aenv_r": 0.6,
+   "tape_wow": 0.7,
+   "space_mix": 0.5,
+   "crush_bits": 9
+  }
+ },
+ {
+  "name": "STATIC FIELD",
+  "author": "WRECKAGE",
+  "tags": [
+   "fx",
+   "dirty"
+  ],
+  "notes": "Sample-and-hold noise field.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "oscA_level": 0.2,
+   "noise_level": 0.8,
+   "flt_mode": 2,
+   "flt_res": 0.7,
+   "flt_cutoff": 1500,
+   "lfo_wave": 4,
+   "lfo_rate": 8,
+   "lfo_cutoff": 0.6,
+   "crush_bits": 5,
+   "crush_rate": 6,
+   "space_mix": 0.5,
+   "out_gain": 4
+  }
+ },
+ {
+  "name": "FLOODLIGHT RISER",
+  "author": "WRECKAGE",
+  "tags": [
+   "fx"
+  ],
+  "notes": "Hold it for six seconds.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "noise_level": 0.5,
+   "uni_voices": 7,
+   "uni_detune": 0.6,
+   "aenv_a": 6,
+   "aenv_s": 1,
+   "aenv_r": 2,
+   "fenv_a": 6,
+   "fenv_s": 1,
+   "flt_env": 0.8,
+   "flt_cutoff": 300,
+   "space_mix": 0.5
+  }
+ },
+ {
+  "name": "WRECKING BALL",
+  "author": "WRECKAGE",
+  "tags": [
+   "fx",
+   "dirty"
+  ],
+  "notes": "Everything at once.",
+  "bank": "",
+  "version": 1,
+  "params": {
+   "uni_voices": 5,
+   "uni_detune": 0.4,
+   "wrk_mode": 2,
+   "wrk_drive": 0.6,
+   "rust": 0.85,
+   "space_mix": 0.3
+  }
+ },
+ {
+  "name": "HAPPY BDAY JACOB",
+  "author": "AUSTIN",
+  "tags": [
+   "keys",
+   "chip"
+  ],
+  "notes": "Happy birthday Jacob. From Austin, Oct 29 2026.",
+  "bank": "OCT 29",
+  "version": 1,
+  "params": {
+   "oscA_wave": 4,
+   "oscA_pw": 0.7,
+   "oscB_wave": 2,
+   "oscB_oct": 1,
+   "oscB_level": 0.3,
+   "aenv_d": 0.7,
+   "aenv_s": 0.2,
+   "aenv_r": 0.7,
+   "tape_wow": 0.55,
+   "space_mix": 0.45,
+   "crush_bits": 9,
+   "rust": 0.2
+  }
+ },
+ {
+  "name": "CANDLE WAX",
+  "author": "AUSTIN",
+  "tags": [
+   "pad"
+  ],
+  "notes": "Slow and warm. Make a wish.",
+  "bank": "OCT 29",
+  "version": 1,
+  "params": {
+   "oscA_wave": 1,
+   "oscA_pw": 0.35,
+   "lfo_pw": 0.4,
+   "lfo_rate": 0.25,
+   "uni_voices": 5,
+   "uni_detune": 0.35,
+   "aenv_a": 1.4,
+   "aenv_r": 3,
+   "flt_cutoff": 1600,
+   "tape_wow": 0.35,
+   "space_mix": 0.5
+  }
+ },
+ {
+  "name": "OCT 29",
+  "author": "AUSTIN",
+  "tags": [
+   "lead",
+   "dirty"
+  ],
+  "notes": "Birthday lead.",
+  "bank": "OCT 29",
+  "version": 1,
+  "params": {
+   "uni_voices": 3,
+   "uni_detune": 0.25,
+   "oscB_wave": 4,
+   "oscB_level": 0.4,
+   "oscB_oct": 1,
+   "wrk_mode": 2,
+   "wrk_drive": 0.5,
+   "rust": 0.25,
+   "mono": 1,
+   "glide": 0.05,
+   "space_mix": 0.25
+  }
+ },
+ {
+  "name": "FROM AUSTIN",
+  "author": "AUSTIN",
+  "tags": [
+   "pluck"
+  ],
+  "notes": "Have a good one.",
+  "bank": "OCT 29",
+  "version": 1,
+  "params": {
+   "oscA_wave": 2,
+   "oscB_wave": 1,
+   "oscB_level": 0.4,
+   "aenv_d": 0.4,
+   "aenv_s": 0,
+   "flt_env": 0.5,
+   "fenv_d": 0.25,
+   "fenv_s": 0,
+   "flt_cutoff": 1200,
+   "space_mix": 0.4,
+   "tape_wow": 0.25
+  }
+ }
+]

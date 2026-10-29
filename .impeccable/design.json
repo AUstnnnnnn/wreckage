@@ -1,0 +1,501 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-29T03:08:12+00:00",
+  "title": "Design System: WRECKAGE",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Night Ground",
+        "purpose": "Slab gaps and stage floor.",
+        "canonical": "#121010",
+        "tonalRamp": [
+          "oklch(15% 0.003 17)",
+          "oklch(25% 0.003 17)",
+          "oklch(35% 0.003 17)",
+          "oklch(45% 0.003 17)",
+          "oklch(55% 0.003 17)",
+          "oklch(65% 0.003 17)",
+          "oklch(80% 0.003 17)",
+          "oklch(95% 0.003 17)"
+        ]
+      },
+      "concrete": {
+        "role": "neutral",
+        "displayName": "Owens Concrete",
+        "purpose": "Slab base under the concrete plate and cool wash.",
+        "canonical": "#3f3c39",
+        "tonalRamp": [
+          "oklch(15% 0.007 68)",
+          "oklch(25% 0.007 68)",
+          "oklch(35% 0.007 68)",
+          "oklch(45% 0.007 68)",
+          "oklch(55% 0.007 68)",
+          "oklch(65% 0.007 68)",
+          "oklch(80% 0.007 68)",
+          "oklch(95% 0.007 68)"
+        ]
+      },
+      "well": {
+        "role": "neutral",
+        "displayName": "Cut Well",
+        "purpose": "Top of the recessed-control gradient.",
+        "canonical": "#1c1917",
+        "tonalRamp": [
+          "oklch(15% 0.006 56)",
+          "oklch(25% 0.006 56)",
+          "oklch(35% 0.006 56)",
+          "oklch(45% 0.006 56)",
+          "oklch(55% 0.006 56)",
+          "oklch(65% 0.006 56)",
+          "oklch(80% 0.006 56)",
+          "oklch(95% 0.006 56)"
+        ]
+      },
+      "well-floor": {
+        "role": "neutral",
+        "displayName": "Cut Well Floor",
+        "purpose": "Bottom of the recessed-control gradient.",
+        "canonical": "#141110",
+        "tonalRamp": [
+          "oklch(15% 0.005 39)",
+          "oklch(25% 0.005 39)",
+          "oklch(35% 0.005 39)",
+          "oklch(45% 0.005 39)",
+          "oklch(55% 0.005 39)",
+          "oklch(65% 0.005 39)",
+          "oklch(80% 0.005 39)",
+          "oklch(95% 0.005 39)"
+        ]
+      },
+      "screen": {
+        "role": "neutral",
+        "displayName": "Phosphor Glass",
+        "purpose": "Scope screen.",
+        "canonical": "#16100d",
+        "tonalRamp": [
+          "oklch(15% 0.012 48)",
+          "oklch(25% 0.012 48)",
+          "oklch(35% 0.012 48)",
+          "oklch(45% 0.012 48)",
+          "oklch(55% 0.012 48)",
+          "oklch(65% 0.012 48)",
+          "oklch(80% 0.012 48)",
+          "oklch(95% 0.012 48)"
+        ]
+      },
+      "slot": {
+        "role": "neutral",
+        "displayName": "Slot Black",
+        "purpose": "Fader slots.",
+        "canonical": "#0f0d0c",
+        "tonalRamp": [
+          "oklch(15% 0.004 48)",
+          "oklch(25% 0.004 48)",
+          "oklch(35% 0.004 48)",
+          "oklch(45% 0.004 48)",
+          "oklch(55% 0.004 48)",
+          "oklch(65% 0.004 48)",
+          "oklch(80% 0.004 48)",
+          "oklch(95% 0.004 48)"
+        ]
+      },
+      "bone": {
+        "role": "neutral",
+        "displayName": "Bone",
+        "purpose": "Live text and needles.",
+        "canonical": "#e4ddd0",
+        "tonalRamp": [
+          "oklch(15% 0.019 83)",
+          "oklch(25% 0.019 83)",
+          "oklch(35% 0.019 83)",
+          "oklch(45% 0.019 83)",
+          "oklch(55% 0.019 83)",
+          "oklch(65% 0.019 83)",
+          "oklch(80% 0.019 83)",
+          "oklch(95% 0.019 83)"
+        ]
+      },
+      "bone-dim": {
+        "role": "neutral",
+        "displayName": "Dust Bone",
+        "purpose": "Inactive and secondary text.",
+        "canonical": "#b3ab9e",
+        "tonalRamp": [
+          "oklch(15% 0.020 80)",
+          "oklch(25% 0.020 80)",
+          "oklch(35% 0.020 80)",
+          "oklch(45% 0.020 80)",
+          "oklch(55% 0.020 80)",
+          "oklch(65% 0.020 80)",
+          "oklch(80% 0.020 80)",
+          "oklch(95% 0.020 80)"
+        ]
+      },
+      "coral": {
+        "role": "primary",
+        "displayName": "Rust Coral",
+        "purpose": "Values, signal, selection, focus.",
+        "canonical": "#e0745a",
+        "tonalRamp": [
+          "oklch(15% 0.140 35)",
+          "oklch(25% 0.140 35)",
+          "oklch(35% 0.140 35)",
+          "oklch(45% 0.140 35)",
+          "oklch(55% 0.140 35)",
+          "oklch(65% 0.140 35)",
+          "oklch(80% 0.140 35)",
+          "oklch(95% 0.140 35)"
+        ]
+      },
+      "coral-hot": {
+        "role": "primary",
+        "displayName": "Hot Coral",
+        "purpose": "Live values, hovered and selected text.",
+        "canonical": "#ffb7a0",
+        "tonalRamp": [
+          "oklch(15% 0.090 38)",
+          "oklch(25% 0.090 38)",
+          "oklch(35% 0.090 38)",
+          "oklch(45% 0.090 38)",
+          "oklch(55% 0.090 38)",
+          "oklch(65% 0.090 38)",
+          "oklch(80% 0.090 38)",
+          "oklch(95% 0.090 38)"
+        ]
+      },
+      "coral-deep": {
+        "role": "primary",
+        "displayName": "Oxide",
+        "purpose": "Dark end of fader fills; permit headline.",
+        "canonical": "#8a3b29",
+        "tonalRamp": [
+          "oklch(15% 0.112 34)",
+          "oklch(25% 0.112 34)",
+          "oklch(35% 0.112 34)",
+          "oklch(45% 0.112 34)",
+          "oklch(55% 0.112 34)",
+          "oklch(65% 0.112 34)",
+          "oklch(80% 0.112 34)",
+          "oklch(95% 0.112 34)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Tag Paper",
+        "purpose": "Tag chips.",
+        "canonical": "#c9c1b2",
+        "tonalRamp": [
+          "oklch(15% 0.022 83)",
+          "oklch(25% 0.022 83)",
+          "oklch(35% 0.022 83)",
+          "oklch(45% 0.022 83)",
+          "oklch(55% 0.022 83)",
+          "oklch(65% 0.022 83)",
+          "oklch(80% 0.022 83)",
+          "oklch(95% 0.022 83)"
+        ]
+      },
+      "permit-paper": {
+        "role": "neutral",
+        "displayName": "Permit Paper",
+        "purpose": "About permit.",
+        "canonical": "#d8d0c0",
+        "tonalRamp": [
+          "oklch(15% 0.023 85)",
+          "oklch(25% 0.023 85)",
+          "oklch(35% 0.023 85)",
+          "oklch(45% 0.023 85)",
+          "oklch(55% 0.023 85)",
+          "oklch(65% 0.023 85)",
+          "oklch(80% 0.023 85)",
+          "oklch(95% 0.023 85)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "purpose": "Text on paper.",
+        "canonical": "#1d1a17",
+        "tonalRamp": [
+          "oklch(15% 0.007 67)",
+          "oklch(25% 0.007 67)",
+          "oklch(35% 0.007 67)",
+          "oklch(45% 0.007 67)",
+          "oklch(55% 0.007 67)",
+          "oklch(65% 0.007 67)",
+          "oklch(80% 0.007 67)",
+          "oklch(95% 0.007 67)"
+        ]
+      },
+      "disabled": {
+        "role": "neutral",
+        "displayName": "Dead Stock",
+        "purpose": "Disabled actions, unset favourites.",
+        "canonical": "#6d655b",
+        "tonalRamp": [
+          "oklch(15% 0.018 74)",
+          "oklch(25% 0.018 74)",
+          "oklch(35% 0.018 74)",
+          "oklch(45% 0.018 74)",
+          "oklch(55% 0.018 74)",
+          "oklch(65% 0.018 74)",
+          "oklch(80% 0.018 74)",
+          "oklch(95% 0.018 74)"
+        ]
+      },
+      "engrave-fill": {
+        "role": "neutral",
+        "displayName": "Engrave Fill",
+        "purpose": "Bone tint over the concrete plate, clipped to glyphs for engraved lettering.",
+        "canonical": "rgba(178, 169, 158, 0.86)",
+        "tonalRamp": [
+          "oklch(15% 0.019 73)",
+          "oklch(25% 0.019 73)",
+          "oklch(35% 0.019 73)",
+          "oklch(45% 0.019 73)",
+          "oklch(55% 0.019 73)",
+          "oklch(65% 0.019 73)",
+          "oklch(80% 0.019 73)",
+          "oklch(95% 0.019 73)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "WRECKAGE only, Big Shoulders Stencil Display."
+      },
+      "headline": {
+        "displayName": "Slab Head",
+        "purpose": "Section names, engraved with a cut rule."
+      },
+      "title": {
+        "displayName": "Preset Name",
+        "purpose": "Preset plate and shelf names."
+      },
+      "label": {
+        "displayName": "Knob Label",
+        "purpose": "Engraved control labels with hot coral values."
+      },
+      "label-small": {
+        "displayName": "Small Label",
+        "purpose": "Small knobs, segments, toggles."
+      },
+      "macro": {
+        "displayName": "Macro",
+        "purpose": "RUST only."
+      },
+      "body": {
+        "displayName": "Notes",
+        "purpose": "Preset notes in the drawer."
+      }
+    },
+    "shadows": [
+      {
+        "name": "slab",
+        "value": "inset 0 1px 0 rgba(255,255,255,0.06), inset 0 -2px 6px rgba(0,0,0,0.35), 0 3px 6px rgba(0,0,0,0.6)",
+        "purpose": "Every concrete slab."
+      },
+      {
+        "name": "well",
+        "value": "inset 0 1px 2px rgba(0,0,0,0.8)",
+        "purpose": "Recessed controls."
+      },
+      {
+        "name": "well-plate",
+        "value": "inset 0 1px 3px rgba(0,0,0,0.8), 0 1px 0 rgba(255,255,255,0.07)",
+        "purpose": "Preset plate cells."
+      },
+      {
+        "name": "engrave",
+        "value": "drop-shadow(0 -1px 0 rgba(0,0,0,0.7)) drop-shadow(0 1px 0 rgba(236,228,214,0.14))",
+        "purpose": "Filter for engraved lettering; wordmark deepens to -2px / 1.5px."
+      },
+      {
+        "name": "cast-knob",
+        "value": "drop-shadow(0 4px 5px rgba(0,0,0,0.55))",
+        "purpose": "Knob plates."
+      },
+      {
+        "name": "fader-cap",
+        "value": "0 3px 4px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.18)",
+        "purpose": "Fader caps."
+      },
+      {
+        "name": "drawer",
+        "value": "10px 0 30px rgba(0,0,0,0.75)",
+        "purpose": "Crates drawer over the wall."
+      },
+      {
+        "name": "permit",
+        "value": "0 10px 26px rgba(0,0,0,0.7)",
+        "purpose": "About permit."
+      }
+    ],
+    "motion": [
+      {
+        "name": "drawer-slide",
+        "value": "transform 0.32s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Crates drawer; removed under reduced motion."
+      },
+      {
+        "name": "hover-fill",
+        "value": "fill 0.12s",
+        "purpose": "Preset arrows."
+      },
+      {
+        "name": "tube-flash",
+        "value": "--flash += 0.55 + overshoot on transient, decays x0.78 per meter frame",
+        "purpose": "Tube brightness/desaturation and overhead spill."
+      },
+      {
+        "name": "rust",
+        "value": "--rust 0..1 from the engine",
+        "purpose": "Corrosion overlay opacity, weep length 70-180px, drip scaleY 0.55-1."
+      },
+      {
+        "name": "lights-out",
+        "value": "1.2s steps(1, end) flicker",
+        "purpose": "Birthday reveal; removed under reduced motion."
+      }
+    ],
+    "stage": {
+      "width": "1200px",
+      "height": "750px",
+      "behaviour": "Fixed artboard scaled whole to the window; no breakpoints."
+    }
+  },
+  "components": [
+    {
+      "name": "Concrete Slab",
+      "kind": "card",
+      "refersTo": "slab",
+      "description": "Every section of the wall: concrete with a cool wash, square, set proud of the ground, engraved heading.",
+      "html": "<section class=\"ds-slab\"><h2 class=\"ds-slab-head\">FILTER</h2></section>",
+      "css": ".ds-slab{background:#3f3c39 linear-gradient(rgba(42,43,46,.42),rgba(42,43,46,.42));box-shadow:inset 0 1px 0 rgba(255,255,255,.06),inset 0 -2px 6px rgba(0,0,0,.35),0 3px 6px rgba(0,0,0,.6);width:194px;height:160px;padding:14px 10px 10px;display:flex;justify-content:center;} .ds-slab-head{font-family:Yanone,'Arial Narrow',sans-serif;font-size:20px;font-weight:500;letter-spacing:.2em;padding-left:.2em;height:max-content;background:linear-gradient(rgba(178,169,158,.86),rgba(178,169,158,.86)),#3f3c39;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;filter:drop-shadow(0 -1px 0 rgba(0,0,0,.7)) drop-shadow(0 1px 0 rgba(236,228,214,.14));box-shadow:0 1px 0 rgba(0,0,0,.5),0 2px 0 rgba(236,228,214,.16);}"
+    },
+    {
+      "name": "Well Button",
+      "kind": "button",
+      "refersTo": "well-button",
+      "description": "Segments, toggles and mode buttons recessed into the concrete; selected gets hot coral text and a coral bottom rule.",
+      "html": "<div class=\"ds-seg\"><button class=\"ds-well\">LP12</button><button class=\"ds-well\" aria-pressed=\"true\">LP24</button><button class=\"ds-well\">BP</button></div>",
+      "css": ".ds-seg{display:flex;gap:2px;} .ds-well{background:linear-gradient(var(--well,#1c1917),var(--well-floor,#141110));box-shadow:inset 0 1px 2px rgba(0,0,0,.8);border:0;border-radius:0;font-family:Yanone,'Arial Narrow',sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:.12em;padding:3px 7px 2px;color:#b3ab9e;cursor:pointer;} .ds-well:hover{color:#e4ddd0;} .ds-well[aria-pressed=true]{color:#ffb7a0;box-shadow:inset 0 -2px 0 #e0745a,inset 0 1px 2px rgba(0,0,0,.8);} .ds-well:focus-visible{outline:1px solid #e0745a;outline-offset:3px;}"
+    },
+    {
+      "name": "Action Button",
+      "kind": "button",
+      "refersTo": "action-button",
+      "description": "Crates drawer actions; bone at rest, hot coral on hover, the primary action already hot.",
+      "html": "<div style=\"display:flex;gap:4px\"><button class=\"ds-action ds-hot\">SAVE</button><button class=\"ds-action\">SAVE AS</button><button class=\"ds-action\" disabled>DELETE</button></div>",
+      "css": ".ds-action{background:linear-gradient(var(--well,#1c1917),var(--well-floor,#141110));box-shadow:inset 0 1px 2px rgba(0,0,0,.8);border:0;border-radius:0;font-family:Yanone,'Arial Narrow',sans-serif;text-transform:uppercase;font-size:15px;letter-spacing:.14em;padding:6px 10px 5px;color:#e4ddd0;cursor:pointer;} .ds-action:hover{color:#ffb7a0;} .ds-hot{color:#ffb7a0;} .ds-action:disabled{color:#6d655b;cursor:default;} .ds-action:focus-visible{outline:1px solid #e0745a;outline-offset:3px;}"
+    },
+    {
+      "name": "Preset Plate",
+      "kind": "nav",
+      "refersTo": "preset-plate",
+      "description": "Recessed preset name with coral step arrows and the CRATES button.",
+      "html": "<nav class=\"ds-plate\"><button class=\"ds-p ds-arr\" aria-label=\"Previous\"><svg viewBox=\"0 0 10 12\"><path d=\"M8 1 2 6l6 5z\"/></svg></button><span class=\"ds-p ds-name\">CONDEMNED</span><button class=\"ds-p ds-arr\" aria-label=\"Next\"><svg viewBox=\"0 0 10 12\"><path d=\"m2 1 6 5-6 5z\"/></svg></button><button class=\"ds-p ds-crates\">CRATES</button></nav>",
+      "css": ".ds-plate{display:flex;gap:3px;height:34px;font-family:Yanone,'Arial Narrow',sans-serif;color:#e4ddd0;} .ds-p{background:linear-gradient(#1c1917,#141110);box-shadow:inset 0 1px 3px rgba(0,0,0,.8),0 1px 0 rgba(255,255,255,.07);border:0;color:inherit;font:inherit;display:grid;place-items:center;} .ds-arr{width:38px;cursor:pointer;} .ds-arr svg{width:10px;height:12px;fill:#e0745a;transition:fill .12s;} .ds-arr:hover svg{fill:#ffb7a0;} .ds-name{width:228px;font-size:19px;letter-spacing:.32em;padding-left:.32em;} .ds-crates{margin-left:8px;width:84px;font-size:18px;letter-spacing:.14em;cursor:pointer;} .ds-crates:hover,.ds-crates[aria-expanded=true]{color:#e0745a;} .ds-p:focus-visible{outline:1px solid #e0745a;outline-offset:3px;}"
+    },
+    {
+      "name": "Cast Knob",
+      "kind": "custom",
+      "refersTo": "knob-mid",
+      "description": "Matte black cast knob with a coral value arc, bone needle and engraved label carrying a hot coral value. Production uses the rust-knob.png plate; approximated here.",
+      "html": "<div class=\"ds-slab-bg\"><div class=\"ds-knob\" tabindex=\"0\"><div class=\"ds-dial\"><svg viewBox=\"-50 -50 100 100\"><path d=\"M-28.3 28.3A40 40 0 1 1 34.6 20\" fill=\"none\" stroke=\"#e0745a\" stroke-width=\"3.6\"/><line x1=\"0\" y1=\"-11\" x2=\"0\" y2=\"-34\" transform=\"rotate(60)\" stroke=\"#e4ddd0\" stroke-width=\"2.6\" stroke-linecap=\"round\"/></svg></div><span class=\"ds-klabel\">WAVE <b>CHIP</b></span></div></div>",
+      "css": ".ds-slab-bg{background:#3f3c39 linear-gradient(rgba(42,43,46,.42),rgba(42,43,46,.42));box-shadow:inset 0 1px 0 rgba(255,255,255,.06),inset 0 -2px 6px rgba(0,0,0,.35),0 3px 6px rgba(0,0,0,.6);padding:20px 30px;display:inline-block;} .ds-knob{display:flex;flex-direction:column;align-items:center;cursor:ns-resize;} .ds-dial{position:relative;width:58px;height:58px;border-radius:50%;background:radial-gradient(circle at 40% 35%,#2e2a27,#0d0b0a 70%);filter:drop-shadow(0 4px 5px rgba(0,0,0,.55));} .ds-dial svg{position:absolute;inset:-14%;width:128%;height:128%;overflow:visible;} .ds-klabel{margin-top:9px;font-family:Yanone,'Arial Narrow',sans-serif;font-size:15px;font-weight:500;letter-spacing:.2em;padding-left:.2em;background:linear-gradient(rgba(178,169,158,.86),rgba(178,169,158,.86)),#3f3c39;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;filter:drop-shadow(0 -1px 0 rgba(0,0,0,.7)) drop-shadow(0 1px 0 rgba(236,228,214,.14));} .ds-klabel b{font-weight:500;-webkit-text-fill-color:#ffb7a0;color:#ffb7a0;letter-spacing:.06em;} .ds-knob:focus-visible{outline:none;} .ds-knob:focus-visible .ds-dial{outline:1px solid #e0745a;outline-offset:10px;}"
+    },
+    {
+      "name": "Fader",
+      "kind": "custom",
+      "refersTo": "fader-slot",
+      "description": "8px slot cut into the slab, coral-to-oxide fill, ribbed metal cap with a bone index.",
+      "html": "<div class=\"ds-fader\"><div class=\"ds-slot\"><div class=\"ds-fill\" style=\"height:60%\"></div><div class=\"ds-cap\" style=\"bottom:60%\"></div></div></div>",
+      "css": ".ds-fader{background:#3f3c39 linear-gradient(rgba(42,43,46,.42),rgba(42,43,46,.42));box-shadow:inset 0 1px 0 rgba(255,255,255,.06),inset 0 -2px 6px rgba(0,0,0,.35),0 3px 6px rgba(0,0,0,.6);display:inline-block;padding:20px 30px;cursor:ns-resize;} .ds-slot{position:relative;width:8px;height:140px;border-radius:4px;background:#0f0d0c;box-shadow:inset 0 2px 4px rgba(0,0,0,.95),0 1px 0 rgba(255,255,255,.08);} .ds-fill{position:absolute;left:2px;right:2px;bottom:2px;border-radius:2px;background:linear-gradient(#e0745a,#8a3b29);} .ds-cap{position:absolute;left:50%;width:26px;height:30px;transform:translate(-50%,50%);border-radius:2px;background:repeating-linear-gradient(transparent 0 4px,rgba(0,0,0,.35) 4px 5px,rgba(255,255,255,.08) 5px 6px),linear-gradient(90deg,#3d3934,#5b5650 45%,#2e2a26);box-shadow:0 3px 4px rgba(0,0,0,.7),inset 0 1px 0 rgba(255,255,255,.18);} .ds-cap::after{content:'';position:absolute;left:3px;right:3px;top:50%;height:2px;margin-top:-1px;background:#e4ddd0;opacity:.8;}"
+    },
+    {
+      "name": "Tag Chip",
+      "kind": "chip",
+      "refersTo": "tag-chip",
+      "description": "Paper scraps stuck on the drawer, slightly crooked; selected turns rust coral.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip\" aria-pressed=\"true\" style=\"--r:-1.4deg\">ALL</button><button class=\"ds-chip\" style=\"--r:0.7deg\">LEAD</button><button class=\"ds-chip\" style=\"--r:-0.7deg\">DIRTY</button></div>",
+      "css": ".ds-chips{display:flex;gap:5px;} .ds-chip{font-family:Yanone,'Arial Narrow',sans-serif;font-size:14px;letter-spacing:.1em;padding:2px 8px 1px;border:0;border-radius:0;background:#c9c1b2;color:#1d1a17;transform:rotate(var(--r,0deg));box-shadow:0 1px 2px rgba(0,0,0,.5);opacity:.86;cursor:pointer;} .ds-chip:hover{opacity:1;} .ds-chip[aria-pressed=true]{background:#e0745a;color:#1a0d08;opacity:1;} .ds-chip:focus-visible{outline:1px solid #e0745a;outline-offset:3px;}"
+    },
+    {
+      "name": "Search Input",
+      "kind": "input",
+      "refersTo": "search-input",
+      "description": "Crates search, recessed well with coral caret and coral focus outline.",
+      "html": "<input class=\"ds-input\" type=\"search\" placeholder=\"search crates\">",
+      "css": ".ds-input{font-family:Yanone,'Arial Narrow',sans-serif;font-size:17px;letter-spacing:.1em;color:#e4ddd0;background:linear-gradient(#1c1917,#141110);border:0;border-radius:0;padding:6px 10px 5px;box-shadow:inset 0 1px 3px rgba(0,0,0,.85);caret-color:#e0745a;width:260px;} .ds-input::placeholder{color:#8e867a;} .ds-input:focus{outline:1px solid #e0745a;outline-offset:0;}"
+    },
+    {
+      "name": "Bench Tabs",
+      "kind": "nav",
+      "refersTo": "",
+      "description": "Engraved tab words under the scope; selected keeps its bone fill and gains a 2px coral rule.",
+      "html": "<nav class=\"ds-tabs\"><button aria-selected=\"true\">SCOPE</button><button>DIRT</button><button>SPACE</button></nav>",
+      "css": ".ds-tabs{background:#3f3c39 linear-gradient(rgba(42,43,46,.42),rgba(42,43,46,.42));box-shadow:inset 0 1px 0 rgba(255,255,255,.06),inset 0 -2px 6px rgba(0,0,0,.35),0 3px 6px rgba(0,0,0,.6);display:flex;gap:30px;padding:12px 24px;} .ds-tabs button{border:0;cursor:pointer;font-family:Yanone,'Arial Narrow',sans-serif;font-size:16px;letter-spacing:.3em;padding:2px 0 3px .3em;background:linear-gradient(rgba(178,169,158,.86),rgba(178,169,158,.86)),#3f3c39;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;filter:drop-shadow(0 -1px 0 rgba(0,0,0,.7)) drop-shadow(0 1px 0 rgba(236,228,214,.14));} .ds-tabs button[aria-selected=true]{background:linear-gradient(rgba(210,202,190,.95),rgba(210,202,190,.95));-webkit-background-clip:text;background-clip:text;box-shadow:0 2px 0 #e0745a;} .ds-tabs button:focus-visible{outline:1px solid #e0745a;outline-offset:3px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Condemned Panel",
+    "overview": "The instrument is a wall, not a panel with a skin. Every surface is board-formed concrete, cold Owens grey, split into slabs by black shadow gaps. Controls are either cut into that concrete (lettering, wells, fader slots, the scope screen) or bolted onto it (matte black cast knobs, the caged tube, anchor bolts). Nothing floats, nothing glows except what the sound lights.\n\nThere is one accent, rust coral, and it only ever means value or signal: knob arcs, fader fills, the tube, the scope trace, the active state. The wall decays on demand. The RUST macro writes a live `--rust` (0 to 1) that raises a corrosion overlay from slab edges, lengthens the weeps under anchor holes, and stretches the drips under the RUST knob. The caged fluorescent tube is the output meter and flashes on transients, and the overhead spill light washes down the wall with it.\n\nThe stage is a fixed 1200 x 750 artboard scaled whole to the plugin window. Density is high but every control is large and decisive; the giant RUST knob and the largest CUTOFF knob anchor the hierarchy.",
+    "keyCharacteristics": [
+      "Board-formed concrete slabs on a near-black ground, 4px shadow gaps.",
+      "Engraved lettering: bone fill clipped through the concrete texture, dark top lip, light bottom lip.",
+      "One accent, rust coral, reserved for value and signal.",
+      "Matte black cast knobs from a single raster plate; coral SVG arcs and bone needles drawn on top.",
+      "Material that reacts: tube level and flash, overhead spill, RUST corrosion."
+    ],
+    "rules": [
+      {
+        "name": "The One Rust Rule",
+        "body": "Coral marks value, signal, or selection. It is never decoration, never a panel fill, never a heading colour.",
+        "section": "colors"
+      },
+      {
+        "name": "The Wash-Not-Filter Rule",
+        "body": "Concrete is cooled and darkened inside its own background layers, never with a CSS filter on the slab, because a slab filter dulls the knobs and lettering bolted to it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Engraved Rule",
+        "body": "Lettering on concrete is cut, not printed: engrave-fill over the concrete plate (300px tile) clipped to the glyphs, text fill transparent, a 1px dark drop-shadow above (rgba(0,0,0,0.7)) and a 1px light one below (rgba(236,228,214,0.14)). Applies to the wordmark, slab heads, knob and fader labels, bench tabs and selector positions. Live values inside a label break out in hot coral.",
+        "section": "typography"
+      },
+      {
+        "name": "The Lit-Glass Exception",
+        "body": "Labels on the dark scope screen are lit, not cut: plain dust bone with a black text shadow.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tracked Caps Rule",
+        "body": "All UI text is uppercase and tracked; tracking grows with importance (0.1em controls, 0.2em labels, 0.3em tabs and preset name). Lowercase appears only in user-entered content: tags, notes, search.",
+        "section": "typography"
+      },
+      {
+        "name": "The Overhead Light Rule",
+        "body": "Top edges of cuts are dark, bottom edges catch light. Never invert it, never light from the side.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** cut every word that sits on concrete using the Engraved Rule; break live values out in hot coral.",
+      "**Do** keep coral for values, signal and selection only.",
+      "**Do** mark a selected control with hot coral text or a 2px coral rule, never with a filled coral block (paper chips excepted).",
+      "**Do** drive any new decay or reaction from `--rust`, `--level` and `--flash` rather than new timers.",
+      "**Do** cool and darken concrete in its background layers, keeping filters off slabs.",
+      "**Do** keep everything on the fixed 1200 x 750 stage and scale the whole."
+    ],
+    "donts": [
+      "**Don't** print flat light text for wall lettering (slab heads, control labels, tabs); it reads as a skin, which is what the world refuses. Lists and inputs inside the crates drawer and labels on the scope glass are read, not carved, and stay flat.",
+      "**Don't** add a second accent hue or tint panels with coral.",
+      "**Don't** round slabs, wells or buttons.",
+      "**Don't** add light sources beyond the tube, its overhead spill and the scope phosphor.",
+      "**Don't** set the wordmark face anywhere but the wordmark."
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+build/
+JUCE/
+dist/
+build-config.log
+.DS_Store
+.impeccable/review/
+research/
+.impeccable/hook.cache.json

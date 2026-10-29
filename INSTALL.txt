@@ -1,0 +1,23 @@
+WRECKAGE
+for WRECKEM. Oct 29 2026. From Austin.
+
+WINDOWS / FL STUDIO
+1. Copy WRECKAGE.vst3 into  C:\Program Files\Common Files\VST3\
+2. FL Studio: Options > Manage plugins > Find more plugins. WRECKAGE shows up under Generators.
+3. WRECKAGE.exe runs on its own without FL if you want to just play it.
+
+MAC
+WRECKAGE.vst3 goes in ~/Library/Audio/Plug-Ins/VST3/, WRECKAGE.component in ~/Library/Audio/Plug-Ins/Components/.
+It isn't signed, so run this once in Terminal:
+  xattr -dr com.apple.quarantine ~/Library/Audio/Plug-Ins/VST3/WRECKAGE.vst3 ~/Library/Audio/Plug-Ins/Components/WRECKAGE.component
+
+YOUR PRESETS
+Saved as plain .wreck files in Documents\WRECKAGE\Presets. Back them up, send them to people,
+drop other people's in there. CRATES opens the browser: SAVE AS to name, tag and sign a patch,
+click the tags to filter, star the ones you keep coming back to. Arrow keys step through the list.
+
+PLAYING
+Computer keys A to L play notes, Z and X change octave. Double-click any knob to reset it,
+shift-drag for fine moves. The mod wheel pushes RUST.
+
+There's more in here. Try the wall.

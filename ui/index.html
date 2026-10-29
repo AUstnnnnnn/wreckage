@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>WRECKAGE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="stage" class="stage">
+  <div class="spill" id="spill"></div>
+
+  <!-- top band -->
+  <header class="band">
+    <div class="slab slab-mark">
+      <button class="wordmark" id="wordmark" aria-label="About WRECKAGE">WRECKAGE</button>
+      <span class="anchor a-tl"></span>
+    </div>
+
+    <div class="slab slab-tube">
+      <nav class="preset-bar" aria-label="Preset">
+        <button class="arrow" id="prev" aria-label="Previous preset"><svg viewBox="0 0 10 12"><path d="M8 1 2 6l6 5z"/></svg></button>
+        <button class="preset-name" id="presetName" title="Open crates">CONDEMNED</button>
+        <button class="arrow" id="next" aria-label="Next preset"><svg viewBox="0 0 10 12"><path d="m2 1 6 5-6 5z"/></svg></button>
+        <button class="crates-btn" id="cratesBtn" aria-expanded="false">CRATES</button>
+      </nav>
+      <div class="tube" id="tube" aria-hidden="true">
+        <img class="tube-off" src="assets/plates/tube.png" alt="">
+        <img class="tube-on" id="tubeOn" src="assets/plates/tube.png" alt="">
+      </div>
+    </div>
+
+    <div class="slab slab-tag">
+      <button class="tag" id="tag" aria-label="WRECKEM"><img src="assets/tag.webp" alt="WRECKEM"></button>
+      <span class="anchor a-tr"></span>
+    </div>
+  </header>
+
+  <!-- section row -->
+  <main class="row">
+    <section class="slab sec" data-sec="osc-a">
+      <h2>OSC A <span class="stepper" data-p="oscA_oct" data-label="OCT"></span></h2>
+      <div class="knob big" data-p="oscA_wave" data-label="WAVE"></div>
+      <div class="pair">
+        <div class="knob small" data-p="oscA_semi" data-label="PITCH"></div>
+        <div class="knob small" data-p="oscA_fine" data-label="DETUNE"></div>
+        <div class="knob small" data-p="oscA_pw" data-label="WIDTH"></div>
+        <div class="knob small" data-p="oscA_level" data-label="LEVEL"></div>
+      </div>
+    </section>
+
+    <section class="slab sec" data-sec="osc-b">
+      <h2>OSC B <span class="stepper" data-p="oscB_oct" data-label="OCT"></span></h2>
+      <div class="knob big" data-p="oscB_wave" data-label="WAVE"></div>
+      <div class="pair">
+        <div class="knob small" data-p="oscB_semi" data-label="PITCH"></div>
+        <div class="knob small" data-p="oscB_fine" data-label="DETUNE"></div>
+        <div class="knob small" data-p="oscB_pw" data-label="WIDTH"></div>
+        <div class="knob small" data-p="oscB_level" data-label="LEVEL"></div>
+      </div>
+    </section>
+
+    <section class="slab sec" data-sec="sub">
+      <h2>SUB / NOISE</h2>
+      <div class="knob mid" data-p="sub_level" data-label="SUB"></div>
+      <div class="seg" data-p="sub_wave" data-labels="SIN,SQR"></div>
+      <div class="seg" data-p="sub_oct" data-labels="-2,-1"></div>
+      <div class="knob mid" data-p="noise_level" data-label="NOISE"></div>
+    </section>
+
+    <section class="slab sec" data-sec="filter">
+      <h2>FILTER</h2>
+      <div class="seg wide" data-p="flt_mode"></div>
+      <div class="knob huge" data-p="flt_cutoff" data-label="CUTOFF"></div>
+      <div class="pair">
+        <div class="knob small" data-p="flt_res" data-label="RES"></div>
+        <div class="knob small" data-p="flt_drive" data-label="DRIVE"></div>
+        <div class="knob small" data-p="flt_env" data-label="ENV" data-bipolar></div>
+        <div class="knob small" data-p="flt_key" data-label="KEY"></div>
+      </div>
+    </section>
+
+    <section class="slab sec" data-sec="aenv">
+      <h2>AMP ENV</h2>
+      <div class="faders">
+        <div class="fader" data-p="aenv_a" data-label="A"></div>
+        <div class="fader" data-p="aenv_d" data-label="D"></div>
+        <div class="fader" data-p="aenv_s" data-label="S"></div>
+        <div class="fader" data-p="aenv_r" data-label="R"></div>
+      </div>
+    </section>
+
+    <section class="slab sec" data-sec="fenv">
+      <h2>FILTER ENV</h2>
+      <div class="faders">
+        <div class="fader" data-p="fenv_a" data-label="A"></div>
+        <div class="fader" data-p="fenv_d" data-label="D"></div>
+        <div class="fader" data-p="fenv_s" data-label="S"></div>
+        <div class="fader" data-p="fenv_r" data-label="R"></div>
+      </div>
+    </section>
+
+    <section class="slab sec" data-sec="lfo">
+      <h2>LFO</h2>
+      <div class="knob mid" data-p="lfo_rate" data-label="RATE" id="lfoRate"></div>
+      <div class="knob mid hidden" data-p="lfo_div" data-label="RATE" id="lfoDiv"></div>
+      <div class="lfo-opts">
+        <button class="cycle" data-p="lfo_wave"></button>
+        <button class="toggle" data-p="lfo_sync">SYNC</button>
+      </div>
+      <div class="pair">
+        <div class="knob small" data-p="lfo_pitch" data-label="PITCH"></div>
+        <div class="knob small" data-p="lfo_cutoff" data-label="CUTOFF"></div>
+        <div class="knob small" data-p="lfo_amp" data-label="AMP"></div>
+        <div class="knob small" data-p="lfo_pw" data-label="WIDTH"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- bottom row -->
+  <section class="slab bench">
+    <span class="anchor a-tl"></span>
+    <div class="screen">
+      <canvas id="scope" class="pane" data-pane="scope" width="1200" height="540"></canvas>
+      <div class="pane knob-row hidden" data-pane="dirt">
+        <div class="knob mid" data-p="crush_bits" data-label="BITS"></div>
+        <div class="knob mid" data-p="crush_rate" data-label="DOWNSAMPLE"></div>
+        <div class="knob mid" data-p="tape_wow" data-label="WOW"></div>
+        <div class="knob mid" data-p="wrk_tone" data-label="TONE"></div>
+        <div class="knob mid" data-p="wrk_mix" data-label="MIX"></div>
+      </div>
+      <div class="pane knob-row hidden" data-pane="space">
+        <div class="knob mid" data-p="space_size" data-label="SIZE"></div>
+        <div class="knob mid" data-p="space_damp" data-label="DAMP"></div>
+        <div class="knob mid" data-p="space_mix" data-label="MIX"></div>
+      </div>
+      <div class="pane knob-row hidden" data-pane="voice">
+        <div class="knob small" data-p="uni_voices" data-label="UNISON"></div>
+        <div class="knob small" data-p="uni_detune" data-label="DETUNE"></div>
+        <div class="knob small" data-p="uni_spread" data-label="SPREAD"></div>
+        <div class="knob small" data-p="glide" data-label="GLIDE"></div>
+        <div class="knob small" data-p="bend" data-label="BEND"></div>
+        <div class="knob small" data-p="velocity" data-label="VELOCITY"></div>
+        <div class="knob small" data-p="out_gain" data-label="OUTPUT"></div>
+        <button class="toggle" data-p="mono">MONO</button>
+      </div>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button role="tab" data-tab="scope" aria-selected="true">SCOPE</button>
+      <button role="tab" data-tab="dirt">DIRT</button>
+      <button role="tab" data-tab="space">SPACE</button>
+      <button role="tab" data-tab="voice">VOICE</button>
+    </nav>
+  </section>
+
+  <section class="slab wreck">
+    <span class="anchor a-tl"></span><span class="anchor a-tr"></span>
+    <h2>WRECK</h2>
+    <div class="selector" data-p="wrk_mode" id="modeSel"></div>
+    <div class="knob mid" data-p="wrk_drive" data-label="DRIVE"></div>
+    <p class="stamp" aria-hidden="true">POURED 10·29·26</p>
+    <div class="rust-wrap">
+      <img class="drips" id="drips" src="assets/plates/rust-drips.png" alt="" onerror="this.remove()">
+      <div class="knob rust" data-p="rust" data-label="RUST"></div>
+    </div>
+  </section>
+
+  <!-- crates drawer -->
+  <aside class="crates" id="crates" aria-label="Presets">
+    <div class="crates-head">
+      <input id="search" type="search" placeholder="search crates" spellcheck="false" autocomplete="off">
+      <button class="close" id="cratesClose" aria-label="Close crates">CLOSE</button>
+    </div>
+    <div class="chips" id="chips"></div>
+    <ol class="shelf" id="shelf"></ol>
+    <p class="notes" id="notes"></p>
+
+    <form class="save-form hidden" id="saveForm" autocomplete="off">
+      <label>NAME<input name="name" maxlength="40" required></label>
+      <label>TAGS<input name="tags" placeholder="lead, dark, mine"></label>
+      <div class="chips suggest" id="tagSuggest"></div>
+      <label>AUTHOR<input name="author" maxlength="40"></label>
+      <label>NOTES<input name="notes" maxlength="200"></label>
+      <div class="form-actions">
+        <button type="button" id="saveCancel">CANCEL</button>
+        <button type="submit" class="hot" id="saveConfirm">SAVE</button>
+      </div>
+    </form>
+
+    <div class="crates-actions" id="cratesActions">
+      <button id="actSave" class="hot">SAVE</button>
+      <button id="actSaveAs">SAVE AS</button>
+      <button id="actDelete">DELETE</button>
+      <button id="actImport">IMPORT</button>
+      <button id="actExport">EXPORT</button>
+      <button id="actFolder">FOLDER</button>
+      <button id="actInit">INIT</button>
+    </div>
+  </aside>
+
+  <!-- about plate -->
+  <div class="permit hidden" id="permit" role="dialog" aria-label="About">
+        <h1 class="permit-big">CONDEMNED FOR WRECKEM</h1>
+    <p>OCT 29 2026 · BUILT BY AUSTIN · v<span id="ver">1.0.0</span></p>
+    <p class="permit-small">STANDALONE: A–L PLAY · Z/X OCTAVE · DOUBLE-CLICK A KNOB TO RESET · SHIFT-DRAG FOR FINE</p>
+  </div>
+
+  <!-- birthday -->
+  <div class="lights-out hidden" id="lightsOut" aria-live="polite">
+    <p class="bday">HAPPY BIRTHDAY<br><span>JACOB</span></p>
+    <p class="bday-small">OCT 29 · FROM AUSTIN · NEW CRATES UNLOCKED</p>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
