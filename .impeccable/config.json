@@ -57,6 +57,24 @@
         ],
         "createdAt": "2026-10-29T04:33:34.853Z",
         "reason": "same engraved lettering the user asked for in the plugin: flat bone tint clipped through concrete, no colour gradient"
+      },
+      {
+        "rule": "tight-leading",
+        "value": "*",
+        "files": [
+          "docs/index.html"
+        ],
+        "createdAt": "2026-10-29T04:35:20.147Z",
+        "reason": "model judgement: only remaining hit is the one-line uppercase DOWNLOAD button label"
+      },
+      {
+        "rule": "wide-tracking",
+        "value": "*",
+        "files": [
+          "docs/index.html"
+        ],
+        "createdAt": "2026-10-29T04:35:20.164Z",
+        "reason": "model judgement: remaining hits are the uppercase download-button label and its caption; body tracking cut to 0.03-0.04em"
       }
     ]
   }
