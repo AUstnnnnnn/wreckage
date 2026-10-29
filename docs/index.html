@@ -156,7 +156,7 @@ details p { padding: 0 0 16px; color: var(--bone-dim); }
     <div class="slab shot"><img src="assets/wreckage-ui.webp" width="1200" height="750" alt="The WRECKAGE plugin window: concrete panels, black knobs with coral arcs, a glowing fluorescent tube meter and a giant RUST knob."></div>
     <div class="slab get">
       <h2 class="cut">GET IT</h2>
-      <a class="dl" href="https://github.com/AUstnnnnnn/wreckage/releases/latest/download/WRECKAGE-Setup.exe">DOWNLOAD FOR WINDOWS<small>VST3 for FL Studio + standalone app</small></a>
+      <a class="dl" href="https://github.com/AUstnnnnnn/wreckage/releases/latest/download/WRECKAGE-Setup.exe">DOWNLOAD FOR WINDOWS<small>Windows 10/11 · 64-bit VST3 + standalone app</small></a>
       <p>On a Mac? Grab <a href="https://github.com/AUstnnnnnn/wreckage/releases/latest/download/WRECKAGE-mac.zip">the Mac version</a> and read the note in the Problems section below.</p>
     </div>
   </section>
@@ -166,15 +166,15 @@ details p { padding: 0 0 16px; color: var(--bone-dim); }
     <ol>
       <li>
         <div>
-          <h3>Run WRECKAGE-Setup.exe</h3>
+          <h3>Close FL Studio, then run WRECKAGE-Setup.exe</h3>
           <p>Windows will probably throw a blue box saying <b>Windows protected your PC</b>. Click <span class="path">More info</span>, then <span class="path">Run anyway</span>.</p>
-          <p class="note"><b>Why the warning:</b> the installer isn't signed with a paid company certificate. It's a gift, not a product. Nothing's wrong with it.</p>
+          <p class="note"><b>Why the warning:</b> the installer isn't signed with a paid company certificate. Only continue if you downloaded it from this page's GitHub release and trust the source.</p>
         </div>
       </li>
       <li>
         <div>
           <h3>Click through the installer</h3>
-          <p>It puts the plugin in <span class="path">C:\Program Files\Common Files\VST3</span>, which is where FL looks, and adds a standalone WRECKAGE app to the Start menu if you just want to mess around without opening FL.</p>
+          <p>Approve the administrator prompt. Setup installs Microsoft WebView2 if needed (internet required), then puts the plugin in <span class="path">C:\Program Files\Common Files\VST3</span>, which is where FL looks, and adds a standalone WRECKAGE app to the Start menu if you just want to mess around without opening FL.</p>
         </div>
       </li>
       <li>
@@ -221,12 +221,16 @@ details p { padding: 0 0 16px; color: var(--bone-dim); }
       <p>Run Find more plugins again from Options › Manage plugins. If it still isn't there, check that <span class="path">C:\Program Files\Common Files\VST3\WRECKAGE.vst3</span> exists and that the scan paths in Manage plugins include that folder.</p>
     </details>
     <details>
+      <summary>Updating or uninstalling</summary>
+      <p>Close FL Studio and WRECKAGE before running a new installer. To remove it, open Windows Settings › Apps › WRECKAGE › Uninstall. Your saved presets stay in Documents\WRECKAGE\Presets.</p>
+    </details>
+    <details>
       <summary>The window is black or blank</summary>
       <p>The interface runs on Microsoft's WebView2, which comes with Windows 11 and up-to-date Windows 10. If it's missing, install the Evergreen runtime from <a href="https://developer.microsoft.com/microsoft-edge/webview2/">Microsoft's WebView2 page</a> and reopen FL.</p>
     </details>
     <details>
       <summary>Crackles after a long session</summary>
-      <p>FL's uneven buffer sizes upset a lot of plugins. In <span class="path">Options › Audio settings</span>, turning on <span class="path">Use fixed size buffers</span> usually sorts it.</p>
+      <p>FL's uneven buffer sizes upset a lot of plugins. Open WRECKAGE’s FL plugin wrapper settings, go to <span class="path">Processing</span>, and try <span class="path">Use fixed size buffers</span>.</p>
     </details>
     <details>
       <summary>Mac: "WRECKAGE can't be opened"</summary>

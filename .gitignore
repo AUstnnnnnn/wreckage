@@ -6,3 +6,4 @@ build-config.log
 .impeccable/review/
 research/
 .impeccable/hook.cache.json
+installer/deps/

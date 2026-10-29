@@ -1,10 +1,23 @@
 WRECKAGE
 for WRECKEM. Oct 29 2026. From Austin.
 
-WINDOWS / FL STUDIO
-1. Copy WRECKAGE.vst3 into  C:\Program Files\Common Files\VST3\
-2. FL Studio: Options > Manage plugins > Find more plugins. WRECKAGE shows up under Generators.
-3. WRECKAGE.exe runs on its own without FL if you want to just play it.
+WINDOWS / FL STUDIO (64-bit Windows 10 or 11)
+1. Close FL Studio and WRECKAGE, then run WRECKAGE-Setup.exe and approve
+   the administrator prompt. Setup installs the VST3 and standalone app.
+   If Microsoft WebView2 is missing, setup installs it (internet required).
+2. FL Studio: Options > Manage plugins > Find more plugins.
+   WRECKAGE shows up under Generators. Star it, then load it from Channel rack +.
+3. WRECKAGE also runs from the Start menu without FL Studio.
+
+Manual install (from the portable CI artifact): copy the entire WRECKAGE.vst3
+folder into C:\Program Files\Common Files\VST3\. Keep the bundle intact.
+Install Microsoft's WebView2 Evergreen Runtime if the interface is blank:
+https://developer.microsoft.com/microsoft-edge/webview2/
+
+Updates: close FL Studio and WRECKAGE, then run the new installer.
+Remove via Windows Settings > Apps > WRECKAGE > Uninstall.
+Your saved presets stay in Documents\WRECKAGE\Presets.
+Install guide and downloads: https://austnnnnnn.github.io/wreckage/
 
 MAC
 WRECKAGE.vst3 goes in ~/Library/Audio/Plug-Ins/VST3/, WRECKAGE.component in ~/Library/Audio/Plug-Ins/Components/.

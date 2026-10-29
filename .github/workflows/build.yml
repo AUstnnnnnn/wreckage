@@ -1,12 +1,19 @@
 name: build
 
+permissions:
+  contents: read
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: false
+
 on:
   push:
   workflow_dispatch:
 
 jobs:
   windows:
-    runs-on: windows-latest
+    runs-on: windows-2022
     steps:
       - uses: actions/checkout@v4
       - name: WebView2 SDK
@@ -25,15 +32,26 @@ jobs:
           Copy-Item -Recurse build\Wreckage_artefacts\Release\VST3\WRECKAGE.vst3 dist\
           Copy-Item build\Wreckage_artefacts\Release\Standalone\WRECKAGE.exe dist\
           Copy-Item INSTALL.txt dist\
+      - name: WebView2 runtime bootstrapper
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force installer/deps | Out-Null
+          Invoke-WebRequest "https://go.microsoft.com/fwlink/p/?LinkId=2124703" -OutFile installer/deps/MicrosoftEdgeWebview2Setup.exe
+          $signature = Get-AuthenticodeSignature installer/deps/MicrosoftEdgeWebview2Setup.exe
+          if ($signature.Status -ne "Valid" -or $signature.SignerCertificate.Subject -notmatch "O=Microsoft Corporation") { throw "Invalid Microsoft WebView2 bootstrapper signature" }
       - name: Installer
         shell: pwsh
         run: |
           choco install innosetup -y --no-progress
           & "${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe" /DSrc="${{ github.workspace }}\build\Wreckage_artefacts\Release" installer\wreckage.iss
+      - name: Install and uninstall check
+        shell: pwsh
+        run: tools/check-windows-install.ps1
       - uses: actions/upload-artifact@v4
         with:
           name: WRECKAGE-Setup
           path: dist/WRECKAGE-Setup.exe
+          if-no-files-found: error
       - uses: actions/upload-artifact@v4
         with:
           name: WRECKAGE-windows
@@ -57,6 +75,7 @@ jobs:
         with:
           name: WRECKAGE-macos
           path: WRECKAGE-mac.zip
+          if-no-files-found: error
 
   # Every push to main refreshes one "latest" release, so the install page's download links never move.
   release:
@@ -73,7 +92,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release delete latest --repo "$GITHUB_REPOSITORY" --yes --cleanup-tag || true
-          gh release create latest --repo "$GITHUB_REPOSITORY" --title "WRECKAGE" --target "$GITHUB_SHA" \
-            --notes "For WRECKEM. Windows: run WRECKAGE-Setup.exe. Mac: WRECKAGE-mac.zip. Install guide: https://austnnnnnn.github.io/wreckage/" \
+          if ! gh release view latest --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release create latest --repo "$GITHUB_REPOSITORY" --title "WRECKAGE" --target "$GITHUB_SHA" --notes "For WRECKEM. Install guide: https://austnnnnnn.github.io/wreckage/"
+          fi
+          gh release upload latest --repo "$GITHUB_REPOSITORY" --clobber \
             artifacts/WRECKAGE-Setup/WRECKAGE-Setup.exe artifacts/WRECKAGE-macos/WRECKAGE-mac.zip
